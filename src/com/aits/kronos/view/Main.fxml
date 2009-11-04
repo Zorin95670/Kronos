@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import jfxtras.labs.scene.control.*?>
+<?import jfxtras.labs.scene.control.gauge.linear.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ScrollPane hbarPolicy="NEVER" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <FlowPane alignment="CENTER" prefHeight="75.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Workspace/Kronos/Ressource/logo.png" />
+               </image>
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </FlowPane.margin>
+            </ImageView>
+            <Label text="KRONOS">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </FlowPane>
+   </top>
+   <right>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <FlowPane alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <TextField promptText="Nom d'utilisateur" />
+               </children>
+            </FlowPane>
+            <FlowPane alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <PasswordField promptText="Mot de passe" />
+               </children>
+            </FlowPane>
+            <FlowPane alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" text="Badger" />
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+   </right>
+   <left>
+      <LineChart prefHeight="250.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </left>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ChoiceBox prefWidth="150.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <Button mnemonicParsing="false" text="Changer">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
