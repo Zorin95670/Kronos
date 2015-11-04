@@ -12,7 +12,10 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
    <center>
-      <ScrollPane hbarPolicy="NEVER" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER" />
+      <ScrollPane hbarPolicy="NEVER" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="Table" prefHeight="200.0" prefWidth="500.0" />
+         </content></ScrollPane>
    </center>
    <top>
       <FlowPane alignment="CENTER" prefHeight="75.0" BorderPane.alignment="CENTER">
