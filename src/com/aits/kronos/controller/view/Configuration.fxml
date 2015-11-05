@@ -6,11 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<DialogPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+<DialogPane expanded="true" prefHeight="582.0" prefWidth="257.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
    <header>
       <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="30.0" prefWidth="200.0">
          <children>
-            <Label text="Configuration" />
+            <Label text="Configuration">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
          </children>
       </FlowPane>
    </header>
@@ -33,21 +36,17 @@
                   <Label text="Temps min repas :" GridPane.rowIndex="1" />
                   <Label text="Entrée min matin : " GridPane.rowIndex="2" />
                   <Label text="Sortie max soir :" GridPane.rowIndex="3" />
-                  <LocalTimePicker GridPane.columnIndex="1" />
-                  <LocalTimePicker GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <LocalTimePicker GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <LocalTimePicker GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <LocalTimePicker fx:id="dayTime" GridPane.columnIndex="1" />
+                  <LocalTimePicker fx:id="mealTime" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <LocalTimePicker fx:id="morningTime" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <LocalTimePicker fx:id="eveningTime" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                </children>
             </GridPane>
          </center>
-         <bottom>
-            <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="30.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Button mnemonicParsing="false" text="Sauvegarder" />
-                  <Button mnemonicParsing="false" text="Fermer" />
-               </children>
-            </FlowPane>
-         </bottom>
       </BorderPane>
    </content>
+   <buttonTypes>
+      <ButtonType fx:constant="CANCEL" />
+      <ButtonType fx:constant="FINISH" />
+   </buttonTypes>
 </DialogPane>
