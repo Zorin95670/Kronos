@@ -1,6 +1,10 @@
 package com.aits.kronos.model;
 
+import java.util.Date;
+
 public class Day {
+	
+	private Date date;
 	private Time[] times;
 	private Time[] defaultTimes;
 	private Time defaultMeelTime;
@@ -11,7 +15,7 @@ public class Day {
 				new Time( 8, 00),
 				new Time(12, 00),
 				new Time(13, 00),
-				new Time(15, 00)
+				new Time(16, 22)
 		});
 		setDefaultTimes(new Time[]{
 				new Time( 8, 00),
@@ -76,5 +80,13 @@ public class Day {
 		System.out.println(d.getTotalDay());
 		System.out.println(d.getCounter());
 		
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	
+	public Date getDate(){
+		return date;
 	}
 }

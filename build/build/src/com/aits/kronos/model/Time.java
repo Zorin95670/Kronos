@@ -28,7 +28,7 @@ public class Time {
 	@Override
 	public String toString() {
 		String s;
-		if(second > 0)
+		if(second >= 0)
 			s = LocalTime.ofSecondOfDay(second).toString();
 		else
 			s = "-" + LocalTime.ofSecondOfDay(-second).toString();
