@@ -55,19 +55,32 @@
       </VBox>
    </right>
    <bottom>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" BorderPane.alignment="CENTER">
          <children>
-            <ChoiceBox prefWidth="150.0">
-               <HBox.margin>
-                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-               </HBox.margin>
-            </ChoiceBox>
-            <Button mnemonicParsing="false" text="Changer">
-               <HBox.margin>
-                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-               </HBox.margin>
-            </Button>
+            <VBox alignment="CENTER" maxHeight="50.0">
+               <children>
+                  <CheckBox fx:id="check" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Affichez plus d'information" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                        <Button mnemonicParsing="false" text="Changer">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
          </children>
-      </HBox>
+      </FlowPane>
    </bottom>
 </BorderPane>
