@@ -1,5 +1,6 @@
 package com.aits.kronos.controller;
 
+import java.io.File;
 import java.io.IOException;
 
 import com.aits.kronos.controller.timeline.ActiveNode;
@@ -46,7 +47,7 @@ public class Main extends Application {
 	public void initRootLayout() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Home.class.getResource("view/Main.fxml"));
+			loader.setLocation(Home.class.getResource("view"+File.separator+"Main.fxml"));
 			rootLayout = (BorderPane) loader.load();
 
 			// Show the scene containing the root layout.
@@ -113,7 +114,7 @@ public class Main extends Application {
 		checkbox.setOnMouseReleased(new InformationVisibilityEvent(getPrimaryStage(), info));
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Home.class.getResource("view/HeaderLine.fxml"));
+			loader.setLocation(Home.class.getResource("view"+File.separator+"HeaderLine.fxml"));
 			container.getChildren().add(loader.load());
 		} catch (IOException e) {
 			e.printStackTrace();
