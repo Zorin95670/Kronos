@@ -2,6 +2,8 @@ package com.aits.kronos.model;
 
 import java.util.Date;
 
+import org.json.JSONObject;
+
 public class Day {
 	
 	private Date date;
@@ -25,6 +27,10 @@ public class Day {
 		});
 		setDefaultMeelTime(new Time( 0, 45));
 		setDefaultDayTime(new Time( 7, 22));
+	}
+	
+	public Day(JSONObject day){
+		//TODO constructor
 	}
 	
 	public Time getMeetTimes(){
@@ -88,5 +94,16 @@ public class Day {
 	
 	public Date getDate(){
 		return date;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	
+	public JSONObject toJSONObject(){
+		// TODO toJSONObject
+		return null;
 	}
 }

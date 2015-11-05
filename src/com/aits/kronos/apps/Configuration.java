@@ -1,6 +1,10 @@
 package com.aits.kronos.apps;
 
+import java.util.List;
+
 import org.json.JSONObject;
+
+import com.aits.kronos.model.Year;
 
 public class Configuration extends JSONObject implements IConfiguration {
 
@@ -10,6 +14,7 @@ public class Configuration extends JSONObject implements IConfiguration {
 	private static String DEFAULT_EVENING_TIME = "18:30";
 	private static String DEFAULT_DATE_FORMAT = "HH:mm";
 
+	private List<Year> years;
 	// private SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
 
 	public Configuration() {

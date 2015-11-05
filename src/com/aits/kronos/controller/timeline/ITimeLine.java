@@ -6,15 +6,15 @@ import javafx.scene.Node;
 
 public interface ITimeLine {
 
-	public Node getNode();
-	public void setNode(Node node);
+	Node getNode();
+	void setNode(Node node);
 	
-	public void loadNode(String name);
+	void loadNode(String name);
 	
-	public void initComponent();
+	void initComponent();
 	
-	public void setInformationVisible(boolean visible);
+	void setInformationVisible(boolean visible);
 	
-	public void setDay(Day day);
-	public Day getDay();
+	void setDay(Day day);
+	Day getDay();
 }

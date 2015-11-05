@@ -17,7 +17,6 @@ public class FieldTimeKeyEvent extends AbstractTimeLineEvent implements EventHan
 		this.fields = fields;
 	}
 
-	@Override
 	public void handle(KeyEvent event) {
 		if (event.getCode().equals(KeyCode.ENTER)) {
 			TextField source = (TextField) event.getSource();

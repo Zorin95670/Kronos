@@ -12,6 +12,7 @@ public abstract class AbstractTimeLine implements ITimeLine {
 
 	private Node node;
 	private Day day;
+
 	@Override
 	public Node getNode() {
 		return node;
